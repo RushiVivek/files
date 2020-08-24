@@ -1,0 +1,121 @@
+body {
+    text-align: center;
+}
+table {
+    display: inline-block;
+}
+button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+input {
+    border: none;
+    color: white;
+    padding: 16px 128px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: text;
+    border-bottom: 5px solid navy;
+}
+#inp:hover {
+    background-color: red;
+    color: white;
+}
+#inp {
+    background-color: white;
+    color: black;
+    border: 5px solid red;
+    outline: 5px solid navy;
+}
+
+[name = 'common'] {
+    background-color: white;
+    color: black;
+    border: 4px solid #4CAF50;
+}
+
+[name = 'common']:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+[name = 'diff'] {
+    background-color: white;
+    color: black;
+    border: 4px solid skyblue;
+}
+
+[name = 'diff']:hover {
+    background-color: skyblue;
+    color: white;
+}
+[name = 'clear'] {
+    background-color: white;
+    color: black;
+    border: 4px solid yellow;
+}
+
+[name = 'clear']:hover {
+    background-color: yellow;
+    color: orange;
+}
+[name = 'sci'] {
+    background-color: white;
+    color: black;
+    border: 4px solid orange;
+    padding: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+[name = 'sci']:hover {
+    background-color: orange;
+    color: white;
+}
+[name = 'equals'] {
+    background-color: white;
+    color: black;
+    border: 4px solid red;
+    padding: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+[name = 'equals']:hover {
+    background-color: red;
+    color: white;
+}
+[name = 'functions'] {
+    background-color: white;
+    color: black;
+    border: 4px solid orange;
+    padding: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+[name = 'functions']:hover {
+    background-color: orange;
+    color: white;
+}
+img {
+    width: 70px;
+}
+table, tr, th {
+    border: 5px solid navy;
+}
+#scientific {
+    display: none;
+
+}

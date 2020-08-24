@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="brython\brython.js"></script>
+    <script type="text/javascript" src="brython\brython_stdlib.js"></script>
+    <script type="text/python" src="calc.py"></script>
+    <link rel="stylesheet" href="style1.css">
+    <title>CalculatoR</title>
+</head>
+<body onload="brython(1)">
+    <input type="text" id="inp" placeholder="Calculator" required>
+    <div class="calc-main" id="calc-main">
+        <table id='kkk'>
+            <tr>
+                <th>
+                    <button id="clear" name="clear">
+                        <b>C</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="diff" name="diff" style="padding: 1px;">
+                        <img src="backspace.png" alt="backspace">
+                    </button>
+                </th>
+                <th>
+                    <button id="sci" name="sci">
+                        <b>Sci</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common" style='padding-left: 34px;padding-right: 34px;'>
+                        <b>/</b>
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button id="common" name="common" style='padding-left: 34px;padding-right: 34px;'>
+                        <b>7</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common">
+                        <b>8</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common" style='padding-left: 33px;padding-right: 33px;'>
+                        <b>9</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common" style='padding-left: 33px;padding-right: 33px;'>
+                        <b>*</b>
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button id="common" name="common" style='padding-left: 34px;padding-right: 34px;'>
+                        <b>4</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common">
+                        <b>5</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common" style='padding-left: 33px;padding-right: 33px;'>
+                        <b>6</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common" style='padding-left: 34px;padding-right: 34px;'>
+                        <b>-</b>
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button id="common" name="common" style='padding-left: 34px;padding-right: 34px;'>
+                        <b>1</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common">
+                        <b>2</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common" style='padding-left: 33px;padding-right: 33px;'>
+                        <b>3</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common">
+                        <b>+</b>
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <button id="common" name="common" style="padding-left: 80px;padding-right: 80px;">
+                        <b>0</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common" style='padding-left: 34px;padding-right: 34px;'>
+                        <b>.</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="equals" name="equals" style='padding-left: 32px;padding-right: 32px;'>
+                        <b>=</b>
+                    </button>
+                </th>
+            </tr>
+        </table>
+        <table id="scientific">
+            <tr>
+                <th>
+                    <button id="functions" name='functions' style="padding-left: 45px;padding-right: 45px;">
+                        <b>sin</b>
+                    </button>
+                </th>
+                <th>
+                    <button id='functions' name="functions" style='padding-left: 31px;padding-right: 31px;'>
+                        <b>cos</b>
+                    </button>
+                </th>
+                <th>
+                    <button id='functions' name="functions" style='padding-left: 30px;padding-right: 30px;'>
+                        <b>tan</b>
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button id="functions" name='functions' style="padding-left: 40px;padding-right: 40px;">
+                        <b>sinh</b>
+                    </button>
+                </th>
+                <th>
+                    <button id='functions' name="functions" style="padding-left: 27px;padding-right: 27px;">
+                        <b>cosh</b>
+                    </button>
+                </th>
+                <th>
+                    <button id='functions' name="functions">
+                        <b>tanh</b>
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button id='functions' name="functions" style="padding-left: 42px;padding-right: 42px;">
+                        <b>exp</b>
+                    </button>
+                </th>
+                <th>
+                    <button id='functions' name="functions">
+                        <b>log10</b>
+                    </button>
+                </th>
+                <th>
+                    <button id='functions' name="functions" style="padding-left: 30px;padding-right: 30px;">
+                        <b>log</b>
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button id="common" name="common"style="padding-left: 53px;padding-right: 53px;">
+                        <b>(</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common" style="padding-left: 42px;padding-right: 42px;">
+                        <b>)</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common" style="padding-left: 37px;padding-right: 37px;">
+                        <b>e</b>
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button id='functions' name="functions";>
+                        <b>factorial</b>
+                    </button>
+                </th>
+                <th>
+                    <button id='functions' name="functions" style="padding-left: 30px;padding-right: 30px;">
+                        <b>sqrt</b>
+                    </button>
+                </th>
+                <th>
+                    <button id="common" name="common" style="padding-left: 34px;padding-right: 34px;">
+                        <b>pi</b>
+                    </button>
+                </th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
